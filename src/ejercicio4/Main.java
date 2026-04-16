@@ -24,7 +24,7 @@ public class Main {
 		}
 	}
 	//Metodo 3: Suma todos elementos de la matriz
-	public int sumaElementosMat(int[][] mat) {
+	public static int sumaElementosMat(int[][] mat) {
 		int sumatoria = 0;
 		
 		for(int f = 0; f<mat.length; f++) {
