@@ -1,19 +1,23 @@
 package ejercicio2;
 /*
- * 1) Implementar con acumuladores booleanos una función booleana “mayor10” que recibe una
-lista de números enteros, y devuelve True si todos los elementos son mayores a 10.
-boolean mayor10(int[] lista){ … }
+ * 2) Implementar con acumuladores booleanos una función booleana “multiplo5AlgunoMayor100”
+que recibe una lista de números enteros, y devuelve True si todos los elementos son múltiplo
+de 5 y alguno de ellos es mayor a 100.
+boolean multiplo5AlgunoMayor100(int[] lista){ … }
  */
 public class Main {
-	boolean mayor10(int[] lista) {
-		boolean todosMayores = true;
-		if(lista.length==0) {
+	boolean multiplo5AlgunoMayor100(int[] lista) {
+		if(lista == null || lista.length==0) {
 			return false;
 		}
-			for(int i = 0; i < lista.length;i++) {
-					todosMayores = todosMayores&&(lista[i]>10);
-			}
-		return todosMayores;
+		
+		boolean todosMultiplo = true;
+		boolean algunoMayor100 = false;
+		
+		for(int i = 0; i<lista.length ; i++) {
+			todosMultiplo = todosMultiplo&&(lista[i]%5==0);
+			algunoMayor100 = algunoMayor100||(lista[i]>100);
+		}
+		return todosMultiplo&&algunoMayor100;
 	}
 }
-
