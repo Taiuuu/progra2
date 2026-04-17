@@ -9,6 +9,14 @@ package ejercicio8;
  * 
  * d) IMPORTANTE: Interpretar cual es la relación entre 2n y log2(n)
  */
+
+
+
+/*
+ * Ejercicio 8 d) La función potencia de 2 y el logaritmo en base 2 son funciones inversas.
+Si un número es 2^n, entonces su log₂ es n.
+El logaritmo base 2 indica el exponente al que hay que elevar 2 para obtener dicho número.
+ */
 public class Main {
 	//verificar si un número es potencia de 2.
 	public static boolean esPotenciaDe2(int num) {
